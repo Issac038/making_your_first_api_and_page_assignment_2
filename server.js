@@ -124,7 +124,7 @@ app.get("/status-info",(req,res)=>{
       "message": "Service Unavailable: The server is currently unable to handle the request due to temporary overloading or maintenance."
       };
       return res.send(obj)
-  }else if(code==504){
+  }else(code==504){
     let obj={
       "status": 504,
       "message": "Gateway Timeout: The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server."
